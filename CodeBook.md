@@ -27,25 +27,27 @@ walking upstairs
 # Variables
 Variable names are a composite of the following
 
-T               Time domain signals
-F               Frequency domain signals
-
-Mean            Estimated mean of signal
-Std             Estimated standard deviation of signal
-
-Acc             Accelerometer signal
-Gyro            Gyroscope signal
-
-Body            Body Component of accelerometer signal
-Gravity         Gravity component of accelerometer signal
-
-Jerk            Derived time value of linear acceleration and angular velocity
-Mag             Magnitude of the signal
-         
-Angle           Angle between vectors described
-Freq            Frequency components of the signal, combined with mean to generate weighted average
-
-X, Y, Z         refer to the dimension the movement was recorded in
+|name segment | variable measurement |
+|---------|--------------------------|
+|T         |      Time domain signals |
+|F         |      Frequency domain signals |
+|          |                                 |
+|Mean      |      Estimated mean of signal |
+|Std       |      Estimated standard deviation of signal |
+|          |                                  |
+|Acc       |      Accelerometer signal |
+|Gyro      |      Gyroscope signal |
+|          |                                  |
+|Body      |      Body Component of accelerometer signal |
+|Gravity   |      Gravity component of accelerometer signal |
+|          |                                           |
+|Jerk      |      Derived time value of linear acceleration and angular velocity |
+|Mag       |      Magnitude of the signal |
+|          |                         |
+|Angle     |      Angle between vectors described |
+|Freq      |      Frequency components of the signal, combined with mean to generate weighted average |
+|          |                                  |
+|X, Y, Z   |      refer to the dimension the movement was recorded in |
 
 # Units and normalisation
 Please note that no unites are provided as the data are normalised.
