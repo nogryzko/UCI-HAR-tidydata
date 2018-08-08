@@ -7,7 +7,7 @@ output: html_document
 
 # Human Activity Recognition Using Smartphones Tidy Dataset
 
-This tidy dataset originates from the Human Activity Recognition (HAR )Using Smartphones dataset described in the publication:
+This tidy dataset originates from the Human Activity Recognition (HAR) Using Smartphones dataset described in the publication:
 
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.
 
@@ -23,7 +23,7 @@ Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ort
 
 # UCI HAR Dataset
 
-The original dataset describes the use of smartphone accelerometers and gyroscopes to record the 6 activities performed by volunteers inc arrying out these experiments and provides 561 measured variables of these activities. The data provided encompass raw data filtered and recorded as described in teh above publication split into a "test" and a "training" dataset. Accompanying each data file is an activity and a subject identifier.
+The original dataset describes the use of smartphone accelerometers and gyroscopes to record the 6 activities performed by volunteers carrying out these experiments and provides 561 measured variables of these activities. The data provided encompass raw data filtered and recorded as described in teh above publication split into a "test" and a "training" dataset. Accompanying each data file is an activity and a subject identifier.
 
 The full dataset and associated Readme can be found here:
 
