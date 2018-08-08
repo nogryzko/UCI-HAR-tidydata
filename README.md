@@ -84,9 +84,7 @@ It then merges and tidies the data with the following:
         a. uses the group_by function to group the data table by subject and activity
         b. sumamrises the grouped data table using the summarise function to generate mean data and record it into a new            data table
         
-8. writes the table into a tab delimited file named "tidymeans".
-
-the data table can be accessed here:
+8. writes the table into a .csv file named "tidymeans.csv".
 
 Information on the variable names can be found in the submitted codebook, CodeBook.md, and the original dataset in features_info.txt
 
