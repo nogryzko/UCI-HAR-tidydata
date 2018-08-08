@@ -50,6 +50,6 @@ Variable names are a composite of the following
 |X, Y, Z   |      refer to the dimension the movement was recorded in |
 
 # Units and normalisation
-Please note that no unites are provided as the data are normalised.
+Please note that no units are provided as the data are normalised.
 
 
