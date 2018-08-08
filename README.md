@@ -51,38 +51,38 @@ The script loads this package before proceeding
 It then merges and tidies the data with the following:
 
 1. reads the features text file
-        a. generates a character vector of all the variable names
-        b. reads this character vector and creates a numerical vector of the positions of each variable containing a               "mean", "Mean", or "std", referring to variables measuring mean or standard deviation.
+    1. generates a character vector of all the variable names
+    2. reads this character vector and creates a numerical vector of the positions of each variable containing a               "mean", "Mean", or "std", referring to variables measuring mean or standard deviation.
         
 2. reads the test dataset
-        a. reads the activity identifier text file as a numeric vector
-        b. reads the subject identifier text file as a numeric vector
-        c. reads the x_test data into R
-        d. uses vector in step 1a. to generate column names for the x_test data table
-        b. subsets the x_text data on columns recording mean or standard deviation using vector 1b.
-        e. adds the subject identifier and activity identifier to the x_test data table as columns
+    1. reads the activity identifier text file as a numeric vector
+    2. reads the subject identifier text file as a numeric vector
+    3. reads the x_test data into R
+    4. uses vector in step 1i. to generate column names for the x_test data table
+    5. subsets the x_text data on columns recording mean or standard deviation using vector 1.ii.
+    6. adds the subject identifier and activity identifier to the x_test data table as columns
         
 3. reads the training dataset
-        a. using the same steps as described for x_test, to generate a labelled x_train dataset
+    1. using the same steps as described for x_test, to generate a labelled x_train dataset
         
 4. merges the training and test datasets
-        a. concatentates the table using bind_rows into a composite dataframe
-        b. orders the data table by subject then activity
-        c. reformats the data into a tbl using as.tbl
+    1. concatentates the table using bind_rows into a composite dataframe
+    2. orders the data table by subject then activity
+    3. reformats the data into a tbl using as.tbl
         
 5. generates descriptive activity names
-        a. reads activity names into a character vector (lower case) from activity_labels.txt
-        b. replaces underscores with spaces to enhance readability
-        c. uses a for loop to assign activity names to the integer values described in activity_labels.txt in the data             table
+    1. reads activity names into a character vector (lower case) from activity_labels.txt
+    2. replaces underscores with spaces to enhance readability
+    3. uses a for loop to assign activity names to the integer values described in activity_labels.txt in the data             table
         
 6. generates descriptive variable names
-        a. generates a character vector from the column names of the composite datatable
-        b. modifies the character vector to add spaces, capitalisation and enhance readability
-        c. renames the columns in the composite datatable
+    1. generates a character vector from the column names of the composite datatable
+    2. modifies the character vector to add spaces, capitalisation and enhance readability
+    3. renames the columns in the composite datatable
         
 7. generates an average of each variable for each subject and each activity
-        a. uses the group_by function to group the data table by subject and activity
-        b. sumamrises the grouped data table using the summarise function to generate mean data and record it into a new            data table
+    1. uses the group_by function to group the data table by subject and activity
+    2. sumamrises the grouped data table using the summarise function to generate mean data and record it into a new            data table
         
 8. writes the table into a .csv file named "tidymeans.csv".
 
