@@ -5,7 +5,7 @@ date: "7 August 2018"
 output: html_document
 ---
 
-##Human Activity Recognition Using Smartphones Tidy Dataset
+# Human Activity Recognition Using Smartphones Tidy Dataset
 
 This tidy dataset originates from the Human Activity Recognition (HAR )Using Smartphones dataset described in the publication:
 
@@ -21,7 +21,7 @@ Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra, Jorge L. Reyes-Ortiz.
 
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. 4th International Workshop of Ambient Assited Living, IWAAL 2012, Vitoria-Gasteiz, Spain, December 3-5, 2012. Proceedings. Lecture Notes in Computer Science 2012, pp 216-223.
 
-#UCI HAR Dataset
+# UCI HAR Dataset
 
 The original dataset describes the use of smartphone accelerometers and gyroscopes to record the 6 activities performed by volunteers inc arrying out these experiments and provides 561 measured variables of these activities. The data provided encompass raw data filtered and recorded as described in teh above publication split into a "test" and a "training" dataset. Accompanying each data file is an activity and a subject identifier.
 
@@ -29,7 +29,7 @@ The full dataset and associated Readme can be found here:
 
 http://http://archive.ics.uci.edu/ml/machine-learning-databases/00240/
 
-#UCI HAR Tidydata
+# UCI HAR Tidydata
 
 The enclosed files are a tidy dataset derived from the UCI HAR data which composite both the test and training datasets into the complete 30 subject data and extract only variables containing mean and standard deviation measurements (86 variables). The values for these variables are averaged for each activity performed by each subject resulting in 6 records for each of the 30 subjects (180 observations) for each of the 86 variables. In this data, an activity for each subject constitutes an individual observation.
 
@@ -87,11 +87,6 @@ It then merges and tidies the data with the following:
 8. writes the table into a tab delimited file named "tidymeans".
 
 the data table can be accessed here:
-
-```{r}
-tidymeans <- read.table("Code Library/Coursera/Getting and Cleaning Data/tidymeans", header = TRUE)
-View(tidymeans)
-```
 
 Information on the variable names can be found in the submitted codebook, CodeBook.md, and the original dataset in features_info.txt
 
