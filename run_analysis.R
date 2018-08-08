@@ -70,6 +70,6 @@ run_analysis <- function(x){
         
         comp_mean <- summarize_all(gcomposite, mean)
         
-        write.csv(comp_mean, "tidymeans.csv", row.names = FALSE)
+        write.table(comp_mean, "tidymeans.txt", row.names = FALSE)
         
 }
